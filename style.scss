@@ -1,0 +1,91 @@
+$bg-color: rgba(72,52,146,0.4);
+$borders: 1px solid $bg-color;
+
+  
+body {
+    background: url( https://i.pinimg.com/originals/ec/dd/98/ecdd98210904d19c8a1cc8aeeb811278.jpg);
+    background-size: cover;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background: $bg-color;
+    display: block;
+    margin: 40px 120px 40px 120px;
+}
+
+.header {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#survey-form {
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@media (max-width: 720px) {
+    #survey-form {
+        max-width: 50%;
+    }
+    input {
+        overflow: hidden;
+    }
+}
+.form {
+    display: grid;
+    padding: 5px 0px 5px 0px;
+    grid-template: auto 1fr / auto;
+    width: 50%;
+    margin-left: 25%;
+    label, p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    input[type='text'], input[type='number'], input[type='email'], select {
+        border: $borders;
+        border-radius: 6px;
+        font-size: 20px;
+        height: 28px;
+        margin-top: 5px;
+        padding-left: 5px;
+    }
+
+    #bet-type {
+        display: inline-block;
+    }
+    
+    #fav-sport {
+        display: inline-block;
+   
+    }
+
+    textarea {
+        border: $borders;
+        border-radius: 6px;
+        font-size: 20px;
+        
+        margin-top: 5px;
+        padding-left: 5px;
+    }
+
+    button {
+        border: $borders;
+        border-radius: 6px;
+        background-color: gold;
+        font-size: 24px;
+        font-weight: bold;
+        color: purple;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+}
+
+

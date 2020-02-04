@@ -2,8 +2,11 @@
 <html>
     <head>
         <title>Sports Survey</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+    <main class='main'>
         <header class='header'>
             <h1 id='title'>TBR Sports Betting Survey</h1>
 
@@ -11,13 +14,13 @@
         </header>
 
         <section class='survey'>
-            <form id='survey form' action="">
+            <form id='survey-form' action="">
                 <div class='form'>
                     <label id='name-label' for="name">Name</label>
                     <input type="text" id='name' name='fullname' placeholder='Enter your full name' required>
                 </div>
                 <div class='form'>
-                    <label id='email-label' for="email">Enter your e-mail</label>
+                    <label id='email-label' for="email">E-mail</label>
                     <input type="email" id='email' name='email' placeholder='E-mail Address' required>
                 </div>
                 <div class='form'>
@@ -33,20 +36,36 @@
                     </select>
                 </div>
 
-                <div class='form'>
+                <div class='form' id='bet-type'>
                     <p>What type of sports bettor do you identify as?</p>
-                    <input type="radio" name='pro-am'> Professional
-                    <input type="radio" name='pro-am'> Recreational
+                    <div>
+                        <input type="radio" name='pro-am'><label>Professional</label>
+                    </div>
+                    <div>
+                        <input type="radio" name='pro-am'><label>Recreational</label>
+                    </div>
                 </div>
 
-                <div class='form'>
+                <div class='form' id='fav-sport'>
                     <p>Which of the sports, from the list below, do you like?</p>
-                    <input type="checkbox" value='football'>American football
-                    <input type="checkbox" value='basketball'>Basketball
-                    <input type="checkbox" value='soccer'>Soccer
-                    <input type="checkbox" value='tennis'>Tennis
-                    <input type="checkbox" value='baseball'>Baseball
-                    <input type="checkbox" value='golf'>Golf
+                    <div>
+                    <input type="checkbox" value='football' id='f'><label>American football</label>
+                    </div>
+                    <div>
+                    <input id='bball' type="checkbox" value='basketball'><label >Basketball</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" value='soccer'><label>Soccer</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" value='tennis'><label>Tennis</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" value='baseball'><label>Baseball</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" value='golf'><label>Golf</label>
+                    </div>
                 </div>
 
                 <div class='form'>
@@ -59,5 +78,6 @@
                 </div>
             </form>
         </section>
+    </main>
     </body>
 </html>
